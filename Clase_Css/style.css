@@ -1,0 +1,18 @@
+h1{
+    color: blue;
+    font-size: 80px;
+}
+
+/* Class */
+.parrafo{
+    color: red;
+    font-size: 40px;
+    font-family: Arial;
+}
+
+/* ID */
+#texto{
+    color: blueviolet;
+    font-size: 20px;
+    font-family: Helvetica;
+}
