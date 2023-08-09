@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-size: 62.5%;
+}
+header{
+    background: radial-gradient(circle, rgb(206,20,42) 70%, rgb(161,11,29));
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.3);
+}
+#logo_Bayern{
+    width: 10rem;
+    height: 10rem;
+    margin: 0.5rem 2rem;
+    display: inline-block;
+}
+#logo_t{
+    width: 15rem;
+    height: 5rem;
+    display: inline-block;
+    margin: 3rem 47rem;
+}
+.titulo{
+    color: white;
+    display: inline-block;
+    position: relative;
+    top: -3rem;
+}
+.titulo h1{
+    font-size: 3rem;
+}
+.titulo p{
+    font-size: 2rem;
+}
+.input_botones_header{
+    display: none;
+}
+.botones_header{
+    display: inline-block;
+}
+.botonera_header img{
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+    margin: 3rem 2rem;
+}
+.botonera_header:hover{
+    background-color: white;
+}
+
+main{
+    display: inline-block;
+}
+.botones_main{
+    display: inline-block;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border-right: 0.5rem solid;
+    border-image: linear-gradient( rgb(206,20,42), rgb(0,102,172)) 1;
+    padding-right: 4rem;
+}
+.input_main_selector{
+    background-image: url(./img/Fondo.jpg);
+    background-size: 100%;
+    height: 20rem;
+    width: 40rem;
+    padding: 1rem;
+    margin: 5rem 3rem;
+    border-radius: 9%;
+    display: flex;
+    font-size: 3.5rem;
+    text-orientation: mixed;
+    box-shadow: 0.8rem 0.6rem 3rem rgba(0, 0, 0, 0.8);
+    justify-content: right;
+}
+.input_main_selector p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 7rem;
+    left: -2.5rem;
+    text-shadow: 0.8rem 0.6rem 0.7rem rgba(0, 0, 0, 0.8);
+}
+.input_main_selector img{
+    filter: drop-shadow(-0.8rem 0.6rem 0.7rem rgba(0, 0, 0, 0.8));
+}
+input{
+    display: none;
+}
+.input_main_selector:hover, .botones_main input:checked + .input_main_selector{
+    background-image: url(./img/Fondo_hover.jpg);
+}
+
+.seleccion_main{
+    display: inline-block;
+    margin: 0 5rem;
+    vertical-align: top;
+}
+.seleccion_main p{
+    font-size: 10rem;
+}
+.link{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5rem 0 6rem 0;
+}
+#Tienda{
+    font-size: 3rem;
+}
+#Equip{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.cartas_main{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0 5rem;
+}
+.input_main_cartas{
+    width: 35rem;
+    height: 50rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 1rem 2rem;
+    border-radius: 9%;
+    display: inline;
+    box-shadow: 0.8rem 0.6rem 3rem rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input_main_cartas p{
+    font-size: 3rem;
+    margin: 1.2rem 0;
+}
+.input_main_cartas img{
+    filter: drop-shadow(-0.8rem 0.6rem 0.7rem rgba(0, 0, 0, 0.8));
+    width: 75%;
+    height: 75%;
+}
+.input_main_cartas h2{
+    font-size: 3.5rem;
+}
+.input_main_cartas:hover, .cartas_main input:checked + .input_main_cartas{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background: radial-gradient(circle, rgb(0,102,172) 70%, rgb(1,66,115));
+    text-align: center;
+    box-shadow: 0 -1rem 2rem rgba(0, 0, 0, 0.3);
+}
+footer img{
+    height: 3%;
+    width: 3%;
+    margin: 1rem 0;
+}

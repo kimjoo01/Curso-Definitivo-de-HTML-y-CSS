@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.6%;
+}
+body{
+    font-size: 1.6rem;
+}
+.contenedores{
+    border: 0.3rem solid black;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+}
+.box{
+    height: 10rem;
+    width: 10rem;
+}
+.box1{
+    background-color: purple;
+}
+.box2{
+    background-color: red;
+}
+.box3{
+    background-color: aqua;
+}
+.box4{
+    background-color: blue;
+}
+.box5{
+    background-color: yellow;
+}
+.box6{
+    background-color: tomato;
+}
