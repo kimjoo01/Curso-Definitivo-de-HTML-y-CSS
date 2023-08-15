@@ -15,6 +15,7 @@ body {
     background-size: 90rem;
     background-repeat: no-repeat;
     background-position: center;
+    flex-wrap: wrap;
 }
 
 header{

@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.6%;
+}
+input{
+    display: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  background-color: black;
+  box-shadow: 0 0.5rem 4rem black;
+}
+.Logo_text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Logo_text h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+.Logo_text img {
+    display: flex;
+    width: 7rem;
+}
+#logo_adidas{
+    display: none;
+}
+.botonera {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+    width: 100%;
+}
+.input_header img{
+    width: 4rem;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main label{
+    display: flex;
+    justify-content: space-between;
+}
+.input_main_selector{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5rem 0 2rem 0;
+    border-bottom: 0.3rem solid black;
+    width: 100%;
+}
+.input_main{
+    display: flex;
+    background-image: url(./img/fondo_img.jpg);
+    background-size: 100%;
+    height: 10rem;
+    width: 20rem;
+    align-items: center;
+    border-radius: 13%;
+    filter: drop-shadow(2rem 2rem 2rem rgba(0, 0, 0, 0.5));
+    margin: 0.5rem;
+}
+.input_main p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    text-shadow: 1rem 1rem 1rem black;
+}
+.input_main img{
+    display: flex;
+    height: 9rem;
+    text-align: right;
+    margin: 0 1.5rem 0 0;
+    filter: drop-shadow(-1rem 1rem 1rem black);
+}
+.input_main:hover , .input_main_selector input:checked + .input_main{
+    background-image: url(./img/fondo_select.jpg);
+}
+
+.tarjetas_main{
+    padding: 2.5rem 1rem;
+    width: 100%;
+}
+.text_main{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text_main p{
+    font-size: 1.5rem;
+}
+.text_main h2{
+    font-size: 2rem;
+}
+
+.cartas_main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 1rem 0 1rem;
+    justify-content: center;
+    width: 100%;
+}
+.input_main_cartas{
+    width: 25rem;
+    height: 40rem;
+    padding: 1rem;
+    margin: 0 1rem 4rem 1rem;
+    border-radius: 9%;
+    display: inline;
+    box-shadow: 0.8rem 0.6rem 3rem rgba(0, 0, 0, 0.8);
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    backdrop-filter: blur(1.2rem);
+}
+.input_main_cartas p{
+    font-size: 2rem;
+    margin: 1.2rem 0;
+}
+.input_main_cartas img{
+    filter: drop-shadow(-1rem 0.6rem 2rem rgba(0, 0, 0, 0.8));
+    width: 19rem;
+}
+.input_main_cartas h2{
+    font-size: 2.5rem;
+}
+.input_main_cartas:hover, .cartas_main input:checked + .input_main_cartas{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+}
+footer img{
+    width: 7rem;
+    margin: 0.8rem 0;
+}
+
+@media (min-width: 780px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .Logo_text {
+        flex-direction: row;
+    }
+    .Logo_text h1 {
+        margin: 0 1rem;
+        font-size: 3rem;
+    }
+    #logo_adidas{
+        display: flex;
+        width: 10rem;
+    }
+    .botonera {
+        width: 30%;
+    }
+
+    .input_main_selector {
+        justify-content: space-around;
+        padding: 3rem 0 4rem 0;
+    }
+    .input_main {
+        height: 12rem;
+        width: 24rem;
+    }
+    .input_main img{
+        height: 11rem;
+    }
+    .input_main p {
+        font-size: 2rem;
+    }
+
+    .text_main p {
+        font-size: 2rem;
+    }
+    .text_main h2 {
+        font-size: 3rem;
+    }
+    .cartas_main{
+        justify-content: space-around;
+    }
+    .input_main_cartas {
+        margin: 0 2rem 4rem 2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    header{
+        padding: 1.3rem;
+    }
+
+    main {
+        flex-wrap: nowrap;
+    }
+    .input_main_selector {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+        border-right: 0.5rem solid black;
+        padding: 5rem 5rem 4rem 3rem;
+        border-bottom: none;
+        width: 50%;
+    }
+    .input_main{
+        height: 20rem;
+        width: 40rem;
+    }
+    .input_main p{
+        font-size: 3.5rem;
+        margin: 0 2rem;
+    }
+    .input_main img{
+        height: 19rem;
+    }
+
+    .tarjetas_main{
+        margin: 3rem 2rem;
+    }
+    .text_main p{
+        font-size: 3rem;
+    }
+    .text_main h2{
+        font-size: 4rem;
+    }
+
+    .cartas_main {
+        justify-content: space-around;
+    }
+    .input_main_cartas {
+        width: 35rem;
+        height: 50rem;
+    }
+    .input_main_cartas p{
+        font-size: 3rem;
+        margin: 1.2rem 0;
+    }
+    .input_main_cartas img{
+        filter: drop-shadow(-1rem 0.6rem 2rem rgba(0, 0, 0, 0.8));
+        width: 23rem;
+    }
+    .input_main_cartas h2{
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1902px) {
+    .input_main_selector {
+        height: 78rem;
+    }
+
+    .input_main_cartas{
+        padding: 1rem;
+        margin: 3rem 2rem;
+    }
+}
